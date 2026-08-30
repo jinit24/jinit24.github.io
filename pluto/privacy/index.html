@@ -12,7 +12,7 @@
   <main class="shell">
     <p class="eyebrow" style="color: var(--green)">Privacy Policy</p>
     <h1 style="font-size: clamp(38px, 7vw, 62px)">Your financial memory stays yours.</h1>
-    <p class="updated">Effective and last updated: August 28, 2026</p>
+    <p class="updated">Effective and last updated: August 30, 2026</p>
 
     <h2>Overview</h2>
     <p>Pluto is a personal finance app that helps you understand spending from transaction receipts and payment alerts. Pluto requests Gmail read-only access only after you choose to start an import. You can use the app's core planning features without connecting Gmail.</p>
@@ -23,7 +23,7 @@
       <li>Derived transaction records, including merchant, amount, date, category, evidence, and linked Gmail message identifiers.</li>
       <li>Receipt images or PDFs you select, and fields extracted from them.</li>
       <li>App settings, import state, local rules, reimbursement policies, reminders, savings-plan choices, and a purchase-entitlement cache.</li>
-      <li>Feedback text and attachments only when you deliberately share them.</li>
+      <li>If you deliberately submit feedback directly to Pluto: your feedback text, the screen and issue type, a random report identifier and timestamp, and technical context consisting of the app version and build, iOS version, device model, and locale.</li>
     </ul>
 
     <h2>How Pluto uses information</h2>
@@ -32,7 +32,9 @@
 
     <h2>Storage and disclosure</h2>
     <p>Gmail-derived records, receipt extraction results, local rules, reimbursement policies, and savings-plan data are stored on your device. Google OAuth credentials are stored in the iOS Keychain. Pluto has no advertising SDK and does not sell personal data.</p>
-    <p>Pluto does not send Gmail message content, receipt content, or derived transaction records to a Pluto server. If you use the feedback share flow, iOS shows you the report before you choose a destination; information then goes only to the service or person you select.</p>
+    <p>Pluto does not send Gmail message content, receipt content, or derived transaction records to Pluto's feedback service.</p>
+    <p>Feedback is optional. If you choose <strong>Send feedback now</strong>, Pluto first redacts common account or card numbers, balances, VPAs, email addresses, one-time codes, and long numeric identifiers from the text, then sends the feedback and technical context listed above to a private Google Sheet controlled by Pluto's developer. It is used only to respond to support needs, investigate bugs, and improve Pluto; it is not used for advertising, tracking, sale, credit decisions, or training generalized artificial-intelligence models. Automated redaction may not catch every sensitive detail, so do not include Gmail content, receipt details, authentication codes, or financial account information.</p>
+    <p>You may instead choose <strong>Share feedback</strong>. iOS shows you the report before you select a destination, and the information then goes to the service or person you choose under their terms.</p>
 
     <h2>Speech recognition and Apple services</h2>
     <p>Voice dictation is optional and starts only when you request it. Depending on your device and Apple settings, Apple may process speech to create a transcript under Apple's privacy terms. Pluto does not retain an audio recording.</p>
@@ -46,11 +48,13 @@
       <li>Delete local Pluto data from Settings → Privacy center.</li>
       <li>Revoke Pluto access in your Google Account security settings.</li>
       <li>Use privacy mode to hide monetary amounts on screen.</li>
+      <li>Choose whether to submit feedback directly, share it through an iOS destination, or send none.</li>
       <li>Delete the app to remove its local app container from the device.</li>
     </ul>
 
     <h2>Retention</h2>
     <p>Local data remains on your device until you delete it through Pluto, delete individual records where available, or delete the app. Pluto does not maintain a server-side copy of your Gmail-derived financial history.</p>
+    <p>Direct feedback reports remain in the private feedback inbox only while they are reasonably needed to investigate the report, provide support, or improve Pluto, and are then deleted. You may request earlier deletion through the Pluto support page; include the approximate submission date, screen, and issue type, but do not post the feedback text or other private information in a public request.</p>
 
     <h2>Children</h2>
     <p>Pluto is not directed to children under 13 and does not knowingly collect children's personal information.</p>
