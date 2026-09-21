@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174c38">
+  <title>How to track reimbursements without losing sight of personal spending | Pluto</title>
+  <meta name="description" content="Separate expenses, expected reimbursements and money actually returned. A worked example and practical steps for tracking personal spending in Pluto on iPhone.">
+  <link rel="canonical" href="https://jinit24.github.io/pluto/guides/reimbursements-and-personal-spending/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Pluto">
+  <meta property="og:title" content="How to track reimbursements without losing sight of personal spending">
+  <meta property="og:description" content="Know what you paid, what might come back, and what actually did. A practical reimbursement-tracking guide with a worked example.">
+  <meta property="og:url" content="https://jinit24.github.io/pluto/guides/reimbursements-and-personal-spending/">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="../../assets/site.css">
+  <style>
+    .guide { max-width: 760px; }
+    .guide h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.08; text-wrap: balance; }
+    .guide .eyebrow { color: var(--green); }
+    .guide .intro { font-size: 19px; color: var(--muted); }
+    .guide ol { padding-left: 24px; }
+    .guide li + li { margin-top: 12px; }
+    .guide .example { margin: 28px 0; padding: 22px; background: #e9f3df; border-radius: 16px; }
+    .guide .example h2 { margin-top: 0; }
+    .guide .example dl { margin: 16px 0 0; }
+    .guide .example dl div { display: flex; justify-content: space-between; gap: 20px; padding: 10px 0; border-top: 1px solid #c4d4bc; }
+    .guide .example dd { margin: 0; font-weight: 750; white-space: nowrap; }
+    .guide .try { margin-top: 40px; padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: white; }
+    .guide .try h2 { margin-top: 0; }
+    .guide .terms { font-size: 14px; color: var(--muted); }
+    .skip-link { position: absolute; left: 16px; top: -60px; padding: 8px 12px; background: white; z-index: 5; }
+    .skip-link:focus { top: 8px; }
+    a:focus-visible { outline: 3px solid #126344; outline-offset: 4px; }
+    footer .shell { display: flex; flex-wrap: wrap; gap: 18px; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to guide</a>
+  <header>
+    <nav class="shell" aria-label="Main navigation">
+      <a class="brand" href="../../">Pluto</a>
+      <a href="../../#features">Features</a>
+      <a href="../../#pricing">Pricing</a>
+      <a href="../../support/">Support</a>
+    </nav>
+  </header>
+  <main id="main" class="shell guide">
+    <article aria-labelledby="guide-title">
+      <p class="eyebrow">A practical spending guide</p>
+      <h1 id="guide-title">How to track reimbursements without losing sight of personal spending</h1>
+      <p class="updated">By Jinit, Pluto's developer · <time datetime="2026-09-21">September 21, 2026</time></p>
+      <p class="intro">A work expense can make your personal spending look unusually high. Subtracting an expected reimbursement too early creates the opposite problem: your tracker shows money back before you have received it.</p>
+      <p>Keep three figures separate: the expense you paid, the amount you think may be reimbursable, and the amount actually returned. This works whether you use a spreadsheet or an expense tracker.</p>
+
+      <section class="example" aria-labelledby="example-title">
+        <h2 id="example-title">Worked example: a ₹3,000 expense</h2>
+        <p>These figures are illustrative. Suppose you pay ₹3,000 for a work-related purchase and expect ₹2,000 back. Before payment arrives, your unreimbursed cost is still ₹3,000. Once ₹2,000 has actually reached you:</p>
+        <dl>
+          <div><dt>Original expense</dt><dd>₹3,000</dd></div>
+          <div><dt>Confirmed reimbursement</dt><dd>₹2,000</dd></div>
+          <div><dt>Personal cost after reimbursement</dt><dd>₹1,000</dd></div>
+        </dl>
+        <p>The calculation is ₹3,000 − ₹2,000 = ₹1,000. An expected amount is a reminder to follow up, not proof that the expense has been repaid.</p>
+      </section>
+
+      <section aria-labelledby="partial-title">
+        <h2 id="partial-title">Record partial payments accurately</h2>
+        <p>If only ₹1,200 arrives, record ₹1,200. Your remaining personal cost is then ₹1,800, even if you originally expected ₹2,000. Keep any expected balance separate from the received amount.</p>
+        <p>In Pluto, confirming a partial amount marks that transaction as reimbursed at the amount you entered. It does not create a separate outstanding-balance tracker. If another payment arrives later, edit the confirmed total for that expense; do not replace it with just the latest instalment.</p>
+      </section>
+
+      <section aria-labelledby="workflow-title">
+        <h2 id="workflow-title">Follow the expense through Pluto</h2>
+        <ol>
+          <li><strong>Set the finder rules.</strong> Open Settings → Money preferences → Reimbursement policies. Add the categories, limits and periods that apply to your own arrangement. These rules help find candidates; a match does not establish employer approval.</li>
+          <li><strong>Review what is available.</strong> Open Settings → Money preferences → Reimbursements. Check the suggested expenses against your receipts and records. Suggestions are distinct from confirmed payments.</li>
+          <li><strong>Confirm the money received.</strong> Open an eligible expense from Transactions, choose “Mark reimbursed”, and enter or review the actual amount. Check each expense before confirming a group.</li>
+          <li><strong>Correct mistakes.</strong> Reopen the transaction and choose “Edit reimbursed amount” if the recorded total is wrong. Use “Undo reimbursed” if nothing was received. The confirmed amount cannot exceed the original expense.</li>
+        </ol>
+        <p>Pluto subtracts the confirmed reimbursement from that expense's personal cost. It does not send a claim to your employer or obtain payment for you.</p>
+      </section>
+
+      <section aria-labelledby="timing-title">
+        <h2 id="timing-title">Check dates when reviewing a month</h2>
+        <p>An expense and its repayment can fall in different months. Keep both dates in your supporting records and check which original transactions a report includes. Pluto's confirmed amount updates the original expense's net cost; do not treat that view as a bank cash-flow statement for the month the repayment arrived.</p>
+        <p>Before acting on a spending total, review its date range, excluded transactions and imported coverage. A lower personal-spending total after a reimbursement is different from having made fewer purchases.</p>
+      </section>
+
+      <aside class="try" aria-labelledby="try-title">
+        <h2 id="try-title">Bring it into your spending routine</h2>
+        <p>Pluto combines private expense tracking, spending analytics, reimbursement records, savings planning and searchable history on iPhone and iPad. Optional read-only Gmail import brings matching receipts and payment alerts into your on-device records. Coverage depends on the emails successfully imported.</p>
+        <a class="button" href="https://apps.apple.com/in/app/pluto-spending-made-private/id6806493023">Download Pluto on the App Store</a>
+        <p class="terms">Your first 30 days include the recent 30-day ledger with no automatic charge. Older history and continued access after that period require a subscription. The India monthly option is ₹29/month and starts immediately when purchased. It renews automatically until cancelled; prices vary by storefront. Check Apple's purchase terms before subscribing.</p>
+      </aside>
+    </article>
+  </main>
+  <footer>
+    <div class="shell"><a href="../../">About Pluto</a><a href="../../privacy/">Privacy</a><a href="../../support/">Support</a><span>© 2026 Pluto</span></div>
+  </footer>
+</body>
+</html>

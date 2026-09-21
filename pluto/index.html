@@ -3,29 +3,92 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pluto turns transaction receipts into a private, on-device spending memory.">
-  <title>Pluto — Private financial memory</title>
-  <link rel="stylesheet" href="assets/site.css">
+  <meta name="theme-color" content="#092b22">
+  <meta name="description" content="Pluto is a private expense tracker for iPhone and iPad. Understand your spending, track reimbursements, plan savings and explore your transaction history.">
+  <link rel="canonical" href="https://jinit24.github.io/pluto/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pluto">
+  <meta property="og:title" content="Pluto — Your spending. Make sense of it.">
+  <meta property="og:description" content="Private expense tracking, spending analytics, reimbursements and savings plans. Made for iPhone and iPad.">
+  <meta property="og:url" content="https://jinit24.github.io/pluto/">
+  <meta property="og:image" content="https://jinit24.github.io/pluto/assets/pluto-home.png">
+  <meta property="og:image:alt" content="Pluto's expense overview on iPhone, showing demonstration data.">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Pluto — Private expense tracker for iPhone &amp; iPad</title>
+  <link rel="stylesheet" href="assets/landing.css">
 </head>
 <body>
-  <header><nav class="shell"><a class="brand" href="./">PLUTO</a><a href="privacy/">Privacy</a><a href="support/">Support</a></nav></header>
-  <main class="shell">
-    <section class="hero">
-      <p class="eyebrow">Know your spend. Keep it yours.</p>
-      <h1>Private financial memory.</h1>
-      <p>Pluto finds transaction-like receipts in Gmail after you connect it, turns them into a useful spending history, and keeps the resulting records on your device.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="shell navigation" aria-label="Main navigation">
+      <a class="brand" href="./" aria-label="Pluto home"><span class="brand-orbit" aria-hidden="true"></span>pluto<span class="brand-dot">.</span></a>
+      <div class="nav-links"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="support/">Support</a></div>
+      <a class="nav-download" href="https://apps.apple.com/in/app/pluto-spending-made-private/id6806493023">Get Pluto <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="shell hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Private expense tracking · iPhone &amp; iPad</p>
+        <h1 id="hero-title">Your spending.<br><span>Make sense of it.</span></h1>
+        <p class="hero-description">Understand where your money goes. Keep track of reimbursements. Make room for your savings goals. Bring it all together with Pluto.</p>
+        <a class="button button-dark" href="https://apps.apple.com/in/app/pluto-spending-made-private/id6806493023"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.1 12.3c0-2 1.6-3 1.7-3.1-1-1.5-2.6-1.7-3.2-1.7-1.4-.2-2.7.8-3.4.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.2-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7 2-1.1 2.8-2.2c.9-1.3 1.2-2.5 1.2-2.6-.1 0-2.5-1-2.5-3.8ZM14.9 6c.6-.8 1.1-1.9 1-3-.9 0-2 .6-2.7 1.4-.6.7-1.2 1.8-1.1 2.9 1 .1 2.1-.5 2.8-1.3Z"/></svg> Download on the App Store <span aria-hidden="true">↗</span></a>
+        <p class="hero-note">Recent history included for your first 30 days.<br>No automatic charge. <a href="#pricing">See pricing &amp; access</a></p>
+        <div class="hero-points"><span>On-device records</span><span>No bank credentials</span><span>Optional Gmail import</span></div>
+      </div>
+      <figure class="hero-visual">
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <img class="phone hero-phone" src="assets/pluto-home.png" width="660" height="1434" alt="Pluto Home: net personal spend, spending trend, monthly budget and recent transactions, shown with demo data." fetchpriority="high">
+        <figcaption>Actual Pluto screen · Demo data</figcaption>
+      </figure>
     </section>
-    <section class="grid" aria-label="Pluto principles">
-      <article class="card"><h2>Read-only</h2><p>Pluto requests only Gmail read access. It cannot send, edit, or delete your email.</p></article>
-      <article class="card"><h2>On-device</h2><p>Transactions, categories, reimbursement policies, and spending insights stay on your iPhone or iPad.</p></article>
-      <article class="card"><h2>Your choice</h2><p>Use Pluto without Gmail, disconnect at any time, and delete local Pluto data from the Privacy center.</p></article>
+    <section class="feature-intro shell" id="features" aria-labelledby="features-title">
+      <p class="eyebrow">From transactions to understanding</p>
+      <div class="section-heading"><h2 id="features-title">More than a running total.</h2><p>Your expenses have a history, a pattern and sometimes a reimbursement. See how they fit together.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-copy"><span class="feature-number">01 / EXPENSES</span><h3>Find the purchase.<br>Keep the context.</h3><p>Search your transactions, review the details and correct categories. Your spending history, organised and easy to revisit.</p></div>
+          <div class="screenshot-wrap"><img class="phone" src="assets/pluto-transactions.png" width="660" height="1434" alt="Pluto's transaction history with search, filters, tags and itemised purchases. Demo data." loading="lazy" decoding="async"></div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-copy"><span class="feature-number">02 / ANALYTICS</span><h3>See where<br>your money goes.</h3><p>Explore spending by category and merchant, spot recurring costs, and compare patterns across your imported history.</p></div>
+          <div class="screenshot-wrap"><img class="phone" src="assets/pluto-insights.png" width="660" height="1434" alt="Pluto Insights showing a spending chart and category, merchant and recurring-cost breakdowns. Demo data." loading="lazy" decoding="async"></div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-copy"><span class="feature-number">03 / SAVINGS</span><h3>Make room for<br>what matters.</h3><p>Set a savings target, review suggested changes and protect the spending you want to keep. Build a plan around your priorities.</p></div>
+          <div class="screenshot-wrap"><img class="phone" src="assets/pluto-save.png" width="660" height="1434" alt="Pluto's savings plan showing a target, suggested spending changes and protected categories. Demo data, not promised savings." loading="lazy" decoding="async"></div>
+        </article>
+      </div>
+      <p class="image-note">Actual app screens with demonstration data. Suggestions depend on your imported history.</p>
     </section>
-    <section>
-      <h2>What Pluto helps with</h2>
-      <p>Set a savings target, review a chronological transaction timeline, ask questions about your own history, spot changes in spending patterns, and track reimbursements without sharing bank credentials.</p>
-      <a class="button" href="support/">Get Pluto support</a>
+    <section class="shell reimbursement-section" id="reimbursements" aria-labelledby="reimbursement-title">
+      <div class="reimbursement-copy"><p class="eyebrow">Reimbursements, in the picture</p><h2 id="reimbursement-title">You paid for it.<br>Keep track of what<br>comes back.</h2><p>Review expenses that may qualify under your reimbursement policies. Confirm what applies, then record the amount you actually received.</p><p class="subtle">A suggestion is a starting point. You stay in control of the confirmed amount.</p>
+      <ol class="reimbursement-steps" aria-label="How reimbursement tracking works">
+        <li><span class="step-index" aria-hidden="true">1</span><div><h3>Set your policies</h3><p>Add the reimbursement rules and limits that apply to you.</p></div></li>
+        <li><span class="step-index" aria-hidden="true">2</span><div><h3>Review suggestions</h3><p>Check which expenses may be reimbursable.</p></div></li>
+        <li><span class="step-index" aria-hidden="true">3</span><div><h3>Record what you received</h3><p>Keep suggested and confirmed amounts distinct.</p></div></li>
+      </ol>
+      <a class="text-link reimbursement-guide" href="guides/reimbursements-and-personal-spending/">How reimbursements affect personal spending <span aria-hidden="true">↗</span></a></div>
+      <figure class="reimbursement-figure"><img class="phone" src="assets/pluto-reimbursements.png" width="660" height="1434" alt="Pluto showing an ₹850 team lunch as ₹430 after a confirmed ₹420 reimbursement. Demo data." loading="lazy" decoding="async"><figcaption>₹850 paid − ₹420 received = ₹430 personal cost.<br>Actual Pluto screen · Demo data</figcaption></figure>
+    </section>
+    <section class="shell history-section" id="history" aria-labelledby="history-title">
+      <div><p class="eyebrow">Start with a history</p><h2 id="history-title">Your spending didn't<br>start today.</h2></div>
+      <div class="history-copy"><p>Bring older Gmail receipts and payment alerts into Pluto with historical backfill. Look beyond this month's spending, find an earlier purchase and give your analytics more context.</p><p class="subtle">Older history requires a subscription. Available records depend on the emails Pluto can successfully import; it isn't a complete bank or payment feed.</p><a class="text-link" href="#pricing">See how access works <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="privacy-section" id="privacy" aria-labelledby="privacy-title">
+      <div class="shell privacy-layout"><div><p class="eyebrow">Spending made private</p><h2 id="privacy-title">Your records.<br>On your device.</h2><a class="text-link" href="privacy/">Read the privacy policy <span aria-hidden="true">↗</span></a></div>
+        <div class="privacy-details"><article><h3>Connect only if you choose</h3><p>Gmail import is optional. You can explore Pluto's planning features without connecting it, and you don't share bank credentials.</p></article><article><h3>Read-only, explained clearly</h3><p>Google's read-only permission is broader than receipts alone. Pluto looks for transaction-like mail. It cannot send, edit or delete emails.</p></article><article><h3>Control your local records</h3><p>Imported spending records, reimbursement policies and savings plans stay on your device. Disconnect Gmail or delete local data from Pluto's privacy controls.</p></article></div>
+      </div>
+    </section>
+    <section class="shell pricing-section" id="pricing" aria-labelledby="pricing-title">
+      <div class="pricing-copy"><p class="eyebrow">Try it with your routine</p><h2 id="pricing-title">Get to know<br>your money better.</h2><p>Start with recent spending. Decide whether Pluto earns a place in your everyday routine.</p><p>Need help getting started? <a href="support/">Get support</a>.</p></div>
+      <div class="pricing-card"><p class="price-label">Monthly subscription · India</p><p class="price">₹29<span>/month</span></p><ul><li>Your first 30 days include the recent 30-day ledger, with no automatic charge.</li><li>A subscription unlocks older history and continued access after the complimentary period.</li><li>Subscribing starts your paid term immediately and renews automatically unless cancelled.</li></ul><a class="button button-dark" href="https://apps.apple.com/in/app/pluto-spending-made-private/id6806493023">Download Pluto <span aria-hidden="true">↗</span></a><p class="pricing-note">Other plans are available in the app. Prices vary by storefront. Review the price and renewal terms shown by Apple before purchasing.</p></div>
+    </section>
+    <section class="shell faq-section" aria-labelledby="faq-title">
+      <h2 id="faq-title">A few useful details.</h2>
+      <div class="faq-list"><details><summary>Will Pluto capture every expense?</summary><p>No. Your history depends on the records Pluto can successfully import. Some payments may be missing or need category corrections. Review the underlying transactions when using its insights.</p></details><details><summary>Do I need to connect Gmail?</summary><p>No. Gmail is an optional way to import receipts and payment alerts. You can explore planning features without connecting it. Imported spending analytics and reimbursement suggestions need transaction data to work from.</p></details><details><summary>Can I import older transactions?</summary><p>Yes. Historical backfill imports older Gmail receipts and payment alerts that Pluto recognises. Older history requires a subscription, and coverage depends on the messages available.</p></details><details><summary>Does a reimbursement suggestion mean I've been paid?</summary><p>No. Suggestions are based on your policies and transaction data. Review them and record the amount you actually received; a suggested amount is separate from confirmed reimbursement.</p></details></div>
     </section>
   </main>
-  <footer><div class="shell">© 2026 Pluto · <a href="privacy/">Privacy Policy</a> · <a href="support/">Support</a></div></footer>
+  <footer class="site-footer"><div class="shell footer-layout"><a class="brand" href="./">pluto<span class="brand-dot">.</span></a><p>Know your spend. Keep it yours.</p><div><a href="privacy/">Privacy</a><a href="support/">Support</a><span>© 2026 Pluto</span></div></div></footer>
 </body>
 </html>
